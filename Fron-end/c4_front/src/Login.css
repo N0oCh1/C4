@@ -1,0 +1,6 @@
+.pizzaBG{
+    background-image: url(./assets/pizza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+}
