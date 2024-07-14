@@ -19,7 +19,7 @@ public class Pedidos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "mesa")
+    @Column(name = "mesa", unique=true )
     private int mesa;
 
 
