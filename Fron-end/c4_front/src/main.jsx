@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import Login from './Login.jsx'
 import Pedidos from './Pedidos.jsx'
+import Mesa from './mesa.jsx'
+import Orden from './Orden.jsx'
+import Facturacion from './Facturacion.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -12,6 +15,18 @@ const router = createBrowserRouter([
   {
     path: "/pedidos",
     element: <Pedidos/>
+  },
+  {
+    path: "/pedidos/mesa/:id",
+    element: <Mesa />
+  },
+  {
+    path: "/pedidos/mesa/:id/Orden/",
+    element: <Orden/>
+  },
+  {
+    path: "/pedidos/mesa/:id/factura/",
+    element: <Facturacion/>
   }
 ])
 

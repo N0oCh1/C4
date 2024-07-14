@@ -1,0 +1,5 @@
+.BgPedido{
+    background-image: url('./assets/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
