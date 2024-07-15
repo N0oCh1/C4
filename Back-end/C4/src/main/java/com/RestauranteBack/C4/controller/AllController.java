@@ -1,7 +1,5 @@
 package com.RestauranteBack.C4.controller;
 
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,11 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.RestauranteBack.C4.models.Items;
 import com.RestauranteBack.C4.models.Pedidos;
-import com.RestauranteBack.C4.models.Producto;
 import com.RestauranteBack.C4.models.Usuario;
 import com.RestauranteBack.C4.repository.ItemsRepo;
 import com.RestauranteBack.C4.repository.PedidosRepo;
-import com.RestauranteBack.C4.repository.ProductoRepo;
 import com.RestauranteBack.C4.services.RegistroServicio;
 
 @RestController
@@ -36,8 +32,6 @@ public class AllController {
     @Autowired
     private PedidosRepo rPedidosRepo;
     @Autowired
-    private ProductoRepo productoRepo;
-    @Autowired
     private ItemsRepo  itemsRepo;
 
     @PostMapping("/registro")
@@ -50,11 +44,11 @@ public class AllController {
         }
         
     }
+
     @GetMapping("/items")
     public List<Items> getProducto(){
         return itemsRepo.findAll();
     }
-
     @GetMapping("/pedido")
     public List<Pedidos> getPedido(){
         return  rPedidosRepo.findAll();

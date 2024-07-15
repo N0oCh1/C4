@@ -12,7 +12,7 @@ import com.RestauranteBack.C4.repository.RegistroRepository;
 public class RegistroServicio {
     @Autowired
     private RegistroRepository registroRepository;
-    @SuppressWarnings("unused")
+    
     public Boolean verificar(Usuario user){
       List<Registro> lRegistros = registroRepository.findAll();
       System.out.println(user.getUser());   

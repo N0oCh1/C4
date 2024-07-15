@@ -23,7 +23,7 @@ function Login () {
         user: form.user,
         password: form.password
       }).then(function(response){
-        console.log(response.status)
+        console.log(response)
         if(response.status == 200) {
           navigate('/Pedidos')
         }
